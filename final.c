@@ -4,15 +4,13 @@ int main()
 {
 
 	int burst_time[20],process[20],waiting_time[20];
-	int turnaround_time[20],priority[20],arrival_time[20],sequence[20],flag_type[20];
+	int turnaround_time[20],priority[20],arrival_time[20],flag_type[20];
 	int i,j,k,z,x,limit,sum=0, position,temp;
 	float average_wait_time, average_turnaround_time;
 	printf("Enter Total Number of Processes:\t");
 	scanf("%d",&limit);
-	int fur=limit;
 	printf("\nEnter Burst Time and arrival_time For %d Proecess\n",limit);
-	//boolean term=true;
-	int count=0,aa,ari;
+	int count=0,aa;
 	int c,flag=0,number;
 	i=0;
 	while(i!=limit)
@@ -44,7 +42,7 @@ int main()
 			
 		}
 	}
-	sequence[count]=aa;
+	
 	flag_type[aa]=burst_time[aa];
 	
 	for(number=0;number<limit;number++)
@@ -93,7 +91,7 @@ int main()
 	}
 	count++;
 	
-	sequence[count]=aa;
+	
 	flag_type[aa]=burst_time[aa];
 	
 	
