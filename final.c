@@ -53,7 +53,7 @@ int main()
 			{
 				if(flag_type[k]==0)
 				{
-				printf("-------.................---------\n");	
+					
 				waiting_time[k]=waiting_time[k]+burst_time[aa];
 
 				
@@ -97,6 +97,7 @@ int main()
 	
 	
 }
+printf("-------......*********..........---------\n");
 	
 	for(i=0;i<limit;i++){
 	sum=sum+waiting_time[i];
