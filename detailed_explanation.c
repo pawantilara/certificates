@@ -27,9 +27,9 @@ int main()
 			}
 		printf("Arrival Time\t");
 		scanf("%d",&arrival_time[i]);	//enter arrival_time
-		if(arrival_time[i]<=0)
+		if(arrival_time[i]<0)
 			{
-			printf("Enter the arrival_time again arrival_time can not be negative and zero\t");
+			printf("Enter the arrival_time again arrival_time can not be negative \t");
 			scanf("%d",&arrival_time[i]);
 			}
 		process[i]=i+1;  //process ID
