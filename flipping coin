@@ -1,0 +1,21 @@
+n=int(input())
+arr=list(map(int,input().split()))
+maxx=0
+v=-1
+count=0
+extra=0
+for i in arr:
+    if(i==1):
+        count+=1
+        if(extra>0):
+            extra-=1
+    else:
+        extra+=1
+        if(extra>v):
+            v=extra
+   
+        
+print(count+v)
+
+    
+         
